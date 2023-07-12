@@ -32,36 +32,29 @@ function getComputerChoice() {
 // function to compare both choices
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) { 
-        console.log("Draw!")
         return "draw"
     }
 
     if (playerSelection === "Rocks") {
         if (computerSelection === "Papers") {
-            console.log("You lose! Opponent gets 1 point.")
             return "lose"
         } else if (computerSelection === "Scissors") {
-            console.log("You win! You get 1 point.")
             return "win"
         }
     }
 
     if (playerSelection === "Papers") {
         if (computerSelection === "Rocks") {
-            console.log("You win! You get 1 point.")
             return "win"
         } else if (computerSelection === "Scissors") {
-            console.log("You lose! Opponent gets 1 point.")
             return "lose"
         }
     }
 
     if (playerSelection === "Scissors") {
         if (computerSelection === "Rocks") {
-            console.log("You lose! Opponent gets 1 point.") 
             return "lose"
         } else if (computerSelection === "Papers") {
-            console.log("You win! You get 1 point.")
             return "win"
         }
     }
@@ -79,12 +72,15 @@ function game() {
         console.log(playerSelection + " VS " + computerSelection)
 
         if (playRound(playerSelection, computerSelection) === "win") {
-            userScore++;
+            userScore++
+            console.log("You win! You get 1 point.")
             console.log(`Round ${i}. SCORE: ${userScore}:${computerScore}`)
         } else if (playRound(playerSelection, computerSelection) === "lose") {
             computerScore++
+            console.log("You lose! Opponent gets 1 point.")
             console.log(`Round ${i}. SCORE: ${userScore}:${computerScore}`)
         } else {
+            console.log("Draw!")
             console.log(`Round ${i}. SCORE: ${userScore}:${computerScore}`)
         }
 
