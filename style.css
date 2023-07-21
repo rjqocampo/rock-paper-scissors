@@ -47,7 +47,7 @@ body {
 #container-main {
     background-color: #FA3333;
     width: 400px;
-    height: 650px;
+    height: 600px;
 }
 
 #container-header {
@@ -76,6 +76,39 @@ h1 {
     align-self: flex-end;
     -webkit-text-stroke: .5px black;
     font-size: 96px;
+}
+
+/* -------------- Game -------------- */
+
+#container-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 150px;
+}
+
+#player-image {
+    -webkit-transform: scaleX(-1);
+}
+
+#container-versus {
+    -webkit-text-stroke: 1px black;
+    font-family: 'Bungee', cursive;
+    text-align: center;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+#text-round {
+    margin-bottom: -6px;
+}
+
+#text-versus {
+    font-size: 30px;
 }
 
 /* -------------- Footer -------------- */
