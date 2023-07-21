@@ -1,15 +1,31 @@
-// function to check if input is empty or invalid. if correct input, make it case insensitive
-function parseInput (input) {
-    let letter = input.charAt(0)
-    let word = letter.toUpperCase() + input.slice(1).toLowerCase();
+let playerScore = 0;
+let computerScore = 0;
 
-    if (word === "") {
-        alert("Kindly choose between Rocks, Papers and Scissors.")
-    } else if (word === "Rocks" || word === "Papers" || word === "Scissors") {
-        return word;
-    } else {
-        alert("You provided an invalid input.")
-    }
+const buttonRocks = document.getElementById('button-rocks');
+const buttonPapers = document.getElementById('button-papers');
+const buttonScissors = document.getElementById('button-scissors');
+const announcer =  document.getElementById('announcer');
+const playerScoreBoard = document.getElementById('player-score');
+const computerScoreBoard = document.getElementById('computer-score');
+
+buttonRocks.addEventListener('click', () => {
+    playRound('Rocks', getComputerChoice());
+    updateScore();
+});
+
+buttonPapers.addEventListener('click', () => {
+    playRound('Papers', getComputerChoice());
+    updateScore();
+});
+
+buttonScissors.addEventListener('click', () => {
+    playRound('Scissors', getComputerChoice());
+    updateScore();
+});
+
+function updateScore() {
+    playerScoreBoard.textContent = playerScore;
+    computerScoreBoard.textContent = computerScore;
 }
 
 // function for a random number generator then assigns respectively if 'Rock', 'Paper', or 'Scissors'
@@ -31,72 +47,41 @@ function getComputerChoice() {
 
 // function to compare both choices
 function playRound(playerSelection, computerSelection) {
+    console.log(playerSelection, computerSelection);
     if (playerSelection === computerSelection) { 
-        return "draw"
+        announcer.textContent = "Draw"
+        return
     }
 
     if (playerSelection === "Rocks") {
         if (computerSelection === "Papers") {
-            return "lose"
+            announcer.textContent = "Lose"
+            return computerScore++;
         } else if (computerSelection === "Scissors") {
-            return "win"
+            announcer.textContent = "Win"
+            return playerScore++;
         }
     }
 
     if (playerSelection === "Papers") {
         if (computerSelection === "Rocks") {
-            return "win"
+            return playerScore++;
         } else if (computerSelection === "Scissors") {
-            return "lose"
+            return computerScore++;
         }
     }
 
     if (playerSelection === "Scissors") {
         if (computerSelection === "Rocks") {
-            return "lose"
+            return computerScore++;
         } else if (computerSelection === "Papers") {
-            return "win"
+            return playerScore++;
         }
     }
 }
 
-// function to run games 5 times and determine who wins after
-function game() {
-    let userScore = 0;
-    let computerScore = 0;
 
-    for (let i = 1; i <= 5; i++) {
-        let input = prompt("Rocks, Papers, Scissors?!")
-        let playerSelection = parseInput(input)
-        let computerSelection = getComputerChoice()
-        console.log(playerSelection + " VS " + computerSelection)
 
-        if (playRound(playerSelection, computerSelection) === "win") {
-            userScore++
-            console.log("You win! You get 1 point.")
-            console.log(`Round ${i}. SCORE: ${userScore}:${computerScore}`)
-        } else if (playRound(playerSelection, computerSelection) === "lose") {
-            computerScore++
-            console.log("You lose! Opponent gets 1 point.")
-            console.log(`Round ${i}. SCORE: ${userScore}:${computerScore}`)
-        } else {
-            console.log("Draw!")
-            console.log(`Round ${i}. SCORE: ${userScore}:${computerScore}`)
-        }
+// buttonRocks.addEventListener('click', playRound('Rocks', getComputerChoice));
 
-        if (i === 5) {
-            if (userScore > computerScore) {
-                alert("YOU'VE WON THE GAME!")
-                console.log("YOU'VE WON THE GAME!")
-            } else if (userScore === computerScore) {
-                alert("THE GAME IS A DRAW!")
-                console.log("THE GAME IS A DRAW!")
-            } else {
-                alert("YOU'VE LOST THE GAME!")
-                console.log("YOU'VE LOST THE GAME!")
-            }
-        }
-    }
-}
-
-game();
+// game();
