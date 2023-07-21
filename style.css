@@ -46,8 +46,8 @@ body {
 
 #container-main {
     background-color: #FA3333;
-    width: 400px;
-    height: 600px;
+    width: 375px;
+    height: 625px;
 }
 
 #container-header {
@@ -82,7 +82,7 @@ h1 {
 
 #container-game {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -112,6 +112,39 @@ img {
 }
 
 /* -------------- Footer -------------- */
+
+#container-buttons {
+    font-family: 'Bungee', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    gap: 25px;
+}
+
+.button-choices {
+    font-family: 'Bungee', cursive;
+    font-size: 30px;
+    text-shadow: -.5px -.5px .5px rgba(0,0,0,0.5), .5px .5px .5px rgba(189, 16, 16, 0.5);
+    border: 50px;
+    border-radius: 105px;
+    background: linear-gradient(145deg, #ff4444, #e42525);
+    box-shadow:  3px 3px 8px #8a1c1c,
+                 -5px -5px 8px #ff4a4a;
+}
+
+#button-rocks {
+    width: 130px;
+}
+
+#button-papers {
+    width: 155px;
+}
+
+#button-scissors {
+    width: 180px;
+}
 
 .hide {
     display: none;

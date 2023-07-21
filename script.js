@@ -7,9 +7,9 @@ const buttonScissors = document.getElementById('button-scissors');
 const announcer =  document.getElementById('announcer');
 const playerScoreBoard = document.getElementById('player-score');
 const computerScoreBoard = document.getElementById('computer-score');
-const buttonsContainer = document.getElementById('container-buttons');
-const winContainer = document.getElementById('container-win');
-const loseContainer = document.getElementById('container-lose');
+const buttonsHideContainer = document.getElementById('buttons-hide-container');
+const winHideContainer = document.getElementById('win-hide-container');
+const loseHideContainer = document.getElementById('lose-hide-container');
 const buttonPlayAgain = document.querySelectorAll('.button-play-again');
 
 buttonRocks.addEventListener('click', () => {
@@ -40,18 +40,19 @@ buttonPlayAgain.forEach(button => { // event listener for both play again button
 function playAgain() {
     playerScore = 0;
     computerScore = 0;
-    buttonsContainer.className = ""
-    winContainer.className = "hide";
-    loseContainer.className = "hide";
+    updateScore();
+    buttonsHideContainer.className = ""
+    winHideContainer.className = "hide";
+    loseHideContainer.className = "hide";
 }
 
 function checkWinner() { // checks winner then modies the UI presented
     if (playerScore === 5) {
-        buttonsContainer.className = "hide"
-        winContainer.className = "";
+        buttonsHideContainer.className = "hide"
+        winHideContainer.className = "";
     } else if (computerScore === 5) {
-        buttonsContainer.className = "hide"
-        loseContainer.className = "";
+        buttonsHideContainer.className = "hide"
+        loseHideContainer.className = "";
     }
 }
 
