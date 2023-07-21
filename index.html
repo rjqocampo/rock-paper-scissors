@@ -3,6 +3,7 @@
     <head>
         <title>Rock Papers Scissors</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="./style.css">
         <script src="script.js" defer></script>
     </head>
     <body>
@@ -20,8 +21,18 @@
             <img src="" alt="">
         </div>
         <p id="announcer"></p>
-        <button id="button-rocks">Rocks</button>
-        <button id="button-papers">Papers</button>
-        <button id="button-scissors">Scissors</button>
+        <div id="container-buttons" class="">
+            <button id="button-rocks">Rocks</button>
+            <button id="button-papers">Papers</button>
+            <button id="button-scissors">Scissors</button>
+        </div>
+        <div id="container-win" class="hide">
+            <p>YOU WIN!</p>
+            <button class="button-play-again">Play again?</button>
+        </div>
+        <div id="container-lose" class="hide">
+            <p>YOU LOSE!</p>
+            <button class="button-play-again">Play again?</button>
+        </div>
     </body>
 </html>
