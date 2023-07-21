@@ -1,5 +1,6 @@
 let playerScore = 0;
 let computerScore = 0;
+let roundCounter = 1;
 
 const buttonRocks = document.getElementById('button-rocks');
 const buttonPapers = document.getElementById('button-papers');
@@ -11,6 +12,7 @@ const buttonsHideContainer = document.getElementById('buttons-hide-container');
 const winHideContainer = document.getElementById('win-hide-container');
 const loseHideContainer = document.getElementById('lose-hide-container');
 const buttonPlayAgain = document.querySelectorAll('.button-play-again');
+const textRoundCounter = document.getElementById('text-round')
 
 buttonRocks.addEventListener('click', () => {
     playRound('Rocks', getComputerChoice());
@@ -40,6 +42,7 @@ buttonPlayAgain.forEach(button => { // event listener for both play again button
 function playAgain() {
     playerScore = 0;
     computerScore = 0;
+    roundCounter = 0;
     updateScore();
     buttonsHideContainer.className = ""
     winHideContainer.className = "hide";
@@ -59,6 +62,13 @@ function checkWinner() { // checks winner then modies the UI presented
 function updateScore() {
     playerScoreBoard.textContent = playerScore;
     computerScoreBoard.textContent = computerScore;
+    if (playerScore < 5 && computerScore < 5) {
+        textRoundCounter.textContent = `ROUND ${roundCounter}`;
+    }
+}
+
+function addRound() {
+    roundCounter++;
 }
 
 // function for a random number generator then assigns respectively if 'Rock', 'Paper', or 'Scissors'
@@ -77,6 +87,7 @@ function getComputerChoice() {
 // function to compare both choices
 function playRound(playerSelection, computerSelection) {
     console.log(playerSelection, computerSelection);
+    addRound();
     if (playerSelection === computerSelection) { 
         return
     }
