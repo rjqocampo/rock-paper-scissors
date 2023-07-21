@@ -71,26 +71,19 @@ function getComputerChoice() {
     } else {
         return "Scissors";
     }
-
-    // n === 1 ? "Rock"
-    // : n === 2 ? "Papers"
-    // : "Scissors";
 }
 
 // function to compare both choices
 function playRound(playerSelection, computerSelection) {
     console.log(playerSelection, computerSelection);
     if (playerSelection === computerSelection) { 
-        announcer.textContent = "Draw"
         return
     }
 
     if (playerSelection === "Rocks") {
         if (computerSelection === "Papers") {
-            announcer.textContent = "Lose"
             return computerScore++;
         } else if (computerSelection === "Scissors") {
-            announcer.textContent = "Win"
             return playerScore++;
         }
     }
@@ -111,9 +104,3 @@ function playRound(playerSelection, computerSelection) {
         }
     }
 }
-
-
-
-// buttonRocks.addEventListener('click', playRound('Rocks', getComputerChoice));
-
-// game();

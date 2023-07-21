@@ -4,35 +4,48 @@
         <title>Rock Papers Scissors</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
         <script src="script.js" defer></script>
     </head>
     <body>
-        <h1>BATO BATO PIK</h1>
-        <div>
-            <p id="player-score">0</p>
-            <p id="computer-score">0</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <div>
-                <p>Round 1</p>
-                <p>VS</p>
+        <div id="container-main">
+            <div id="container-header">
+                <p id="player-score" class="score-buttons">0</p>
+                <div id="container-title">
+                    <h1>BATO</h1>
+                    <h1>BATO</h1>
+                    <h1>PIK!</h1>
+                </div>
+                <p id="computer-score" class="score-buttons">0</p>
             </div>
-            <img src="" alt="">
-        </div>
-        <p id="announcer"></p>
-        <div id="container-buttons" class="">
-            <button id="button-rocks">Rocks</button>
-            <button id="button-papers">Papers</button>
-            <button id="button-scissors">Scissors</button>
-        </div>
-        <div id="container-win" class="hide">
-            <p>YOU WIN!</p>
-            <button class="button-play-again">Play again?</button>
-        </div>
-        <div id="container-lose" class="hide">
-            <p>YOU LOSE!</p>
-            <button class="button-play-again">Play again?</button>
+
+            <div id="container-game">
+                <img src="" alt="">
+                <div>
+                    <p>Round 1</p>
+                    <p>VS</p>
+                </div>
+                <img src="" alt="">
+            </div>
+
+
+            <div>
+                <div id="container-buttons" class="">
+                    <button id="button-rocks">Rocks</button>
+                    <button id="button-papers">Papers</button>
+                    <button id="button-scissors">Scissors</button>
+                </div>
+                <div id="container-win" class="hide">
+                    <p>YOU WIN!</p>
+                    <button class="button-play-again">Play again?</button>
+                </div>
+                <div id="container-lose" class="hide">
+                    <p>YOU LOSE!</p>
+                    <button class="button-play-again">Play again?</button>
+                </div>
+            </div>
         </div>
     </body>
 </html>

@@ -1,3 +1,85 @@
+/* CSS Reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* -------------- Custom CSS -------------- */
+
+body,
+button {
+    font-family: 'Bungee Inline', cursive;
+    color: #FFDA17;
+}
+
+body {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* -------------- Header -------------- */
+
+
+#container-main {
+    background-color: #FA3333;
+    width: 400px;
+    height: 650px;
+}
+
+#container-header {
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    -webkit-text-stroke: .5px black;
+    letter-spacing: -2px;
+    margin-bottom: -15px;
+}
+
+#player-score {
+    transform: rotate(-13deg);
+}
+
+#computer-score {
+    transform: rotate(13deg);
+}
+
+.score-buttons {
+    align-self: flex-end;
+    -webkit-text-stroke: .5px black;
+    font-size: 96px;
+}
+
+/* -------------- Footer -------------- */
+
 .hide {
     display: none;
 }
