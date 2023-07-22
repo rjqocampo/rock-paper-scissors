@@ -34,7 +34,7 @@ button {
 }
 
 body {
-    background-color: gray;
+    background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,30 +47,44 @@ body {
 #container-main {
     background-color: #FA3333;
     width: 375px;
-    height: 625px;
+    height: 650px;
+    border-radius: 35px;;
 }
 
 #container-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     height: 200px;
-    margin-top: 25px;
+    margin-top: 40px;
+}
+
+#container-title {
+    height: 145px;
+    width: 160px;
+    background-image: url(./img/title.png);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    padding-top: 20px;            
 }
 
 h1 {
     font-size: 40px;
     text-align: center;
-    -webkit-text-stroke: .5px black;
+    -webkit-text-stroke: .8px black;
     letter-spacing: -2px;
     margin-bottom: -15px;
+    text-shadow:1px 2px 10px #000000;
 }
 
 #player-score {
     transform: rotate(-13deg);
+    text-shadow:1px 2px 10px #000000;
 }
 
 #computer-score {
     transform: rotate(13deg);
+    text-shadow:1px 2px 10px #000000;
 }
 
 .score-buttons {
@@ -94,6 +108,11 @@ img {
 
 #player-image {
     -webkit-transform: scaleX(-1);
+    filter: drop-shadow(-2px 2px 6px rgb(0, 0, 0));
+}
+
+#computer-image {
+    filter: drop-shadow(2px 2px 6px rgb(0, 0, 0));
 }
 
 #container-versus {
@@ -109,14 +128,51 @@ img {
 
 #text-round {
     margin-bottom: -6px;
+    text-shadow:1px 1px 10px #000000;
+}
+
+#text-results {
+    text-shadow:1px 1px 10px #000000;
+}
+
+.button-choices {
+    -webkit-text-stroke: .6px rgb(29, 29, 29);
+    font-family: 'Bungee Inline', cursive;
+    font-size: 30px;
+    text-shadow: -.5px -.5px .5px rgba(0,0,0,0.5), .5px .5px .5px rgba(189, 16, 16, 0.5);
+    border: 50px;
+    border-radius: 105px;
+    background: linear-gradient(145deg, #ff4444, #e42525);
+    box-shadow:3px 3px 8px #8a1c1c,
+                -5px -5px 8px #ff4a4a;
+    text-shadow: -1px -1px 2px #4d0000,
+                    1px 1px 1px #fd5959;
 }
 
 #text-versus {
     font-size: 30px;
     margin-bottom: -5px;
+    text-shadow:1px 1px 10px #000000;
+}
+
+#button-rocks {
+    width: 130px;
+    
+}
+
+#button-papers {
+    width: 155px;
+}
+
+#button-scissors {
+    width: 180px;
 }
 
 /* -------------- Footer -------------- */
+
+#container-footer {
+    background: background-color: #fcfcfc;
+}
 
 #container-buttons,
 #container-win,
@@ -136,7 +192,6 @@ img {
     font-size: 40px;
 }
 
-.button-choices,
 .button-play-again {
     font-family: 'Bungee', cursive;
     font-size: 30px;
@@ -154,18 +209,6 @@ img {
 
 #text-end-result {
     font-size: 45px;
-}
-
-#button-rocks {
-    width: 130px;
-}
-
-#button-papers {
-    width: 155px;
-}
-
-#button-scissors {
-    width: 180px;
 }
 
 .hide {

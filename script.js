@@ -35,10 +35,11 @@ function updateRoundResult(result) {
     textResults.textContent = result;
 }
 
-function playAgain() { // resets numbers and toggle correct UI for playing
+function playAgain() { // resets variables and toggle correct UI for playing
     playerScore = 0;
     computerScore = 0;
-    roundCounter = 0;
+    roundCounter = 1;
+    textResults.textContent = "\u00A0"
     playerImage.setAttribute('src', `./img/Rocks.png`);
     updateScore();
     buttonsHideContainer.className = ""
