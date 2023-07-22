@@ -2,9 +2,9 @@ let playerScore = 0;
 let computerScore = 0;
 let roundCounter = 1;
 
-const buttonRocks = document.getElementById('button-rocks');
-const buttonPapers = document.getElementById('button-papers');
-const buttonScissors = document.getElementById('button-scissors');
+// const buttonRocks = document.getElementById('button-rocks');
+// const buttonPapers = document.getElementById('button-papers');
+// const buttonScissors = document.getElementById('button-scissors');
 const announcer =  document.getElementById('announcer');
 const playerScoreBoard = document.getElementById('player-score');
 const computerScoreBoard = document.getElementById('computer-score');
@@ -13,24 +13,17 @@ const winHideContainer = document.getElementById('win-hide-container');
 const loseHideContainer = document.getElementById('lose-hide-container');
 const buttonPlayAgain = document.querySelectorAll('.button-play-again');
 const textRoundCounter = document.getElementById('text-round')
+const buttonsSelect = document.querySelectorAll('.button-choices');
 
-buttonRocks.addEventListener('click', () => {
-    playRound('Rocks', getComputerChoice());
-    updateScore();
-    checkWinner()
-});
 
-buttonPapers.addEventListener('click', () => {
-    playRound('Papers', getComputerChoice());
-    updateScore();
-    checkWinner()
-});
-
-buttonScissors.addEventListener('click', () => {
-    playRound('Scissors', getComputerChoice());
-    updateScore();
-    checkWinner()
-});
+buttonsSelect.forEach((button) => { // loop through 3 button choices and get data key from HTML
+    let playerChoice = button.getAttribute('data-key');
+    button.addEventListener('click', () => {
+        playRound(playerChoice, getComputerChoice());
+        updateScore();
+        checkWinner();
+    })
+})
 
 buttonPlayAgain.forEach(button => { // event listener for both play again buttons that resets score
     button.addEventListener('click', () => {
