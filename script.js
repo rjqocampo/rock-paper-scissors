@@ -35,17 +35,18 @@ function updateRoundResult(result) {
     textResults.textContent = result;
 }
 
-function playAgain() {
+function playAgain() { // resets numbers and toggle correct UI for playing
     playerScore = 0;
     computerScore = 0;
     roundCounter = 0;
+    playerImage.setAttribute('src', `./img/Rocks.png`);
     updateScore();
     buttonsHideContainer.className = ""
     winHideContainer.className = "hide";
     loseHideContainer.className = "hide";
 }
 
-function checkWinner() { // checks winner then modies the UI presented
+function checkWinner() { // checks winner then toggles appropriate UI
     if (playerScore === 5) {
         buttonsHideContainer.className = "hide"
         winHideContainer.className = "";
@@ -67,8 +68,7 @@ function addRound() {
     roundCounter++;
 }
 
-// function for a random number generator then assigns respectively if 'Rock', 'Paper', or 'Scissors'
-function getComputerChoice() {
+function getComputerChoice() { // function for a random number generator
     let n = Math.floor(Math.random() * 3) + 1
 
     if (n === 1) {
@@ -87,7 +87,6 @@ function updateImage(playerSelection, computerSelection) {
 
 // function to compare both choices
 function playRound(playerSelection, computerSelection) {
-    console.log(playerSelection, computerSelection);
     updateImage(playerSelection, computerSelection);
     addRound();
     if (playerSelection === computerSelection) { 

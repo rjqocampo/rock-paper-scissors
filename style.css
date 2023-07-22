@@ -118,7 +118,9 @@ img {
 
 /* -------------- Footer -------------- */
 
-#container-buttons {
+#container-buttons,
+#container-win,
+#container-lose {
     font-family: 'Bungee', cursive;
     display: flex;
     flex-direction: column;
@@ -128,7 +130,14 @@ img {
     gap: 25px;
 }
 
-.button-choices {
+#container-win,
+#container-lose {
+    font-family: 'Bungee Inline', cursive;
+    font-size: 40px;
+}
+
+.button-choices,
+.button-play-again {
     font-family: 'Bungee', cursive;
     font-size: 30px;
     text-shadow: -.5px -.5px .5px rgba(0,0,0,0.5), .5px .5px .5px rgba(189, 16, 16, 0.5);
@@ -137,6 +146,14 @@ img {
     background: linear-gradient(145deg, #ff4444, #e42525);
     box-shadow:  3px 3px 8px #8a1c1c,
                  -5px -5px 8px #ff4a4a;
+}
+
+.button-play-again {
+    width: 260px;
+}
+
+#text-end-result {
+    font-size: 45px;
 }
 
 #button-rocks {
