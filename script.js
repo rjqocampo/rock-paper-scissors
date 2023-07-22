@@ -2,9 +2,7 @@ let playerScore = 0;
 let computerScore = 0;
 let roundCounter = 1;
 
-// const buttonRocks = document.getElementById('button-rocks');
-// const buttonPapers = document.getElementById('button-papers');
-// const buttonScissors = document.getElementById('button-scissors');
+
 const announcer =  document.getElementById('announcer');
 const playerScoreBoard = document.getElementById('player-score');
 const computerScoreBoard = document.getElementById('computer-score');
@@ -14,12 +12,13 @@ const loseHideContainer = document.getElementById('lose-hide-container');
 const buttonPlayAgain = document.querySelectorAll('.button-play-again');
 const textRoundCounter = document.getElementById('text-round')
 const buttonsSelect = document.querySelectorAll('.button-choices');
+const textResults = document.getElementById('text-results');
 
 
 buttonsSelect.forEach((button) => { // loop through 3 button choices and get data key from HTML
     let playerChoice = button.getAttribute('data-key');
     button.addEventListener('click', () => {
-        playRound(playerChoice, getComputerChoice());
+        updateRoundResult(playRound(playerChoice, getComputerChoice()));
         updateScore();
         checkWinner();
     })
@@ -31,6 +30,10 @@ buttonPlayAgain.forEach(button => { // event listener for both play again button
         updateScore();
     })
 });
+
+function updateRoundResult(result) {
+    textResults.textContent = result;
+}
 
 function playAgain() {
     playerScore = 0;
@@ -82,30 +85,36 @@ function playRound(playerSelection, computerSelection) {
     console.log(playerSelection, computerSelection);
     addRound();
     if (playerSelection === computerSelection) { 
-        return
+        return "draw"
     }
 
     if (playerSelection === "Rocks") {
         if (computerSelection === "Papers") {
-            return computerScore++;
+            computerScore++;
+            return "lose";
         } else if (computerSelection === "Scissors") {
-            return playerScore++;
+            playerScore++;
+            return "win"
         }
     }
 
     if (playerSelection === "Papers") {
         if (computerSelection === "Rocks") {
-            return playerScore++;
+            playerScore++;
+            return "win";
         } else if (computerSelection === "Scissors") {
-            return computerScore++;
+            computerScore++;
+            return "lose"
         }
     }
 
     if (playerSelection === "Scissors") {
         if (computerSelection === "Rocks") {
-            return computerScore++;
+            computerScore++;
+            return "lose";
         } else if (computerSelection === "Papers") {
-            return playerScore++;
+            playerScore++;
+            return "win";
         }
     }
 }
