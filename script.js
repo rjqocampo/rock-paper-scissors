@@ -1,8 +1,3 @@
-let playerScore = 0;
-let computerScore = 0;
-let roundCounter = 1;
-
-
 const announcer =  document.getElementById('announcer');
 const playerScoreBoard = document.getElementById('player-score');
 const computerScoreBoard = document.getElementById('computer-score');
@@ -13,7 +8,12 @@ const buttonPlayAgain = document.querySelectorAll('.button-play-again');
 const textRoundCounter = document.getElementById('text-round')
 const buttonsSelect = document.querySelectorAll('.button-choices');
 const textResults = document.getElementById('text-results');
+const playerImage = document.getElementById('player-image');
+const computerImage = document.getElementById('computer-image');
 
+let playerScore = 0;
+let computerScore = 0;
+let roundCounter = 1;
 
 buttonsSelect.forEach((button) => { // loop through 3 button choices and get data key from HTML
     let playerChoice = button.getAttribute('data-key');
@@ -80,9 +80,15 @@ function getComputerChoice() {
     }
 }
 
+function updateImage(playerSelection, computerSelection) {
+    playerImage.setAttribute('src', `./img/${playerSelection}.png`);
+    computerImage.setAttribute('src', `./img/${computerSelection}.png`);
+}
+
 // function to compare both choices
 function playRound(playerSelection, computerSelection) {
     console.log(playerSelection, computerSelection);
+    updateImage(playerSelection, computerSelection);
     addRound();
     if (playerSelection === computerSelection) { 
         return "draw"
