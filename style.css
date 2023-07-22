@@ -31,6 +31,7 @@ body,
 button {
     font-family: 'Bungee Inline', cursive;
     color: #FFDA17;
+    line-height: 1.2;
 }
 
 body {
@@ -47,7 +48,7 @@ body {
 #container-main {
     background-color: #FA3333;
     width: 375px;
-    height: 650px;
+    height: 625px;
     border-radius: 35px;;
 }
 
@@ -55,7 +56,7 @@ body {
     display: flex;
     justify-content: center;
     height: 200px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 #container-title {
@@ -85,6 +86,7 @@ h1 {
 #computer-score {
     transform: rotate(13deg);
     text-shadow:1px 2px 10px #000000;
+    text-align: right;
 }
 
 .score-buttons {
@@ -170,10 +172,6 @@ img {
 }
 
 /* -------------- Footer -------------- */
-
-#container-footer {
-    background: background-color: #fcfcfc;
-}
 
 #container-buttons,
 #container-win,
