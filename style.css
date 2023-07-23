@@ -27,6 +27,10 @@ time, mark, audio, video {
 
 /* -------------- Custom CSS -------------- */
 
+html {
+    height: 100%;
+}
+
 body,
 button {
     font-family: 'Bungee Inline', cursive;
@@ -39,7 +43,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100%;
 }
 
 /* -------------- Header -------------- */
@@ -48,8 +52,7 @@ body {
 #container-main {
     background-color: #FA3333;
     width: 375px;
-    height: 625px;
-    border-radius: 35px;;
+    border-radius: 35px;
 }
 
 #container-header {
@@ -172,16 +175,17 @@ img {
 }
 
 /* -------------- Footer -------------- */
-
 #container-buttons,
 #container-win,
 #container-lose {
+    min-height: 190px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     font-family: 'Bungee', cursive;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 250px;
     gap: 25px;
 }
 

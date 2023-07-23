@@ -41,6 +41,7 @@ function playAgain() { // resets variables and toggle correct UI for playing
     roundCounter = 1;
     textResults.textContent = "\u00A0"
     playerImage.setAttribute('src', `./img/Rocks.png`);
+    computerImage.setAttribute('src', `./img/Rocks.png`);
     updateScore();
     buttonsHideContainer.className = ""
     winHideContainer.className = "hide";
