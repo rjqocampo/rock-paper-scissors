@@ -165,8 +165,8 @@ img {
 }
 
 .button-choices:active {
-    box-shadow:2px 2px 8px #8a1c1c,
-    -4px -4px 8px #ff4a4a;
+    box-shadow:1px 1px 4px #8a1c1c,
+    -5px -5px 8px #ff4a4a;
 }
 
 #text-versus {
