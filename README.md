@@ -12,11 +12,12 @@ Link to live project: https://rjqocampo.github.io/rock-paper-scissors/ :point_le
 * Javascript
 * Other tools used:
   
-  * Github Pages for hosting
+  * Github Pages for free hosting
   * Git for version control
   * Figma for mockup
-  * Chrome dev tools for debugging
+  * Chrome DevTools for debugging
   * Google Fonts for web fonts
+  * Visual Studio Code for IDE
 
 ### Motivation
 To practice and solidify my Javascript and CSS fundamentals
