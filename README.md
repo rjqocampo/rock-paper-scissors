@@ -4,16 +4,33 @@ Welcome to Bato, Bato, Pik!
 
 This project provides an interactive way to play the classic Rock, Paper, Scissors game in your web browser using HTML, CSS, and JavaScript.
 
+Link to live project: https://rjqocampo.github.io/rock-paper-scissors/ :point_left:
+
 ### Built With
 * HTML
 * CSS
 * Javascript
+* Other tools used:
+  
+  * Github Pages for hosting
+  * Git for version control
+  * Figma for mockup
+  * Chrome dev tools for debugging
+  * Google Fonts for web fonts
 
 ### Motivation
 To practice and solidify my Javascript and CSS fundamentals
 
-### Learnings
-* Web fonts vary
+### My Learnings
+* Importance of functions and event listeners
+* The value of chrome dev tools to inspect layout
+* Web fonts vary from OS to OS. Encountered a layout bug that was present on Windows, but not on Xubuntu, where I built it. 
+
+### Known Issues
+* Delay on initial load of images
+
+### Prospective Updates
+* Animations for better user feedback
 
 # Getting Started
 You can start the project in two ways:
@@ -33,3 +50,22 @@ _or_
 
   3. Open the directory where you cloned the repository
   4. Select the _**`index.html`**_ file and open in your preferred web browser
+
+# Contributions
+
+I owe my learnings to the open source community. It's an amazing place to learn, inspire and create.  So I welcome any contributions from the community that can help enhance this project. If you're interested in contributing, here are a few pointers to get you started:
+
+* **Fork the Repository:** Fork this repository to your GitHub account.
+* **Make Changes:** Implement your changes, whether they're bug fixes, new features, or improvements.
+* **Create a Pull Request:** Submit a pull request to the original repository. Provide a clear description of your changes.
+* **Merge:** Once approved, your changes will be merged into the project.
+
+Thank you for your contributions and I appreciate all interests in making this project better for everyone. 
+
+If you have any questions, feel free to contact me.
+
+# Contacts
+
+Email: rjqocampo@gmail.com
+
+Linkedin: https://www.linkedin.com/in/rodjohnocampo/
