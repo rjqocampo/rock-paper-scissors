@@ -12,48 +12,55 @@
     </head>
     <body>
         <div id="container-main">
-            <div id="container-header">
-                <p id="player-score" class="score-buttons">0</p>
-                <div id="container-title">
-                    <h1>BATO</h1>
-                    <h1>BATO</h1>
-                    <h1>PIK!</h1>
-                </div>
-                <p id="computer-score" class="score-buttons">0</p>
-            </div>
-
             <div id="container-game">
-                <img id="player-image" src="./img/Rocks.png" alt="">
-                <div id="container-versus">
-                    <p id="text-round">Round 1</p>
-                    <p id="text-versus">VS</p>
-                    <p id="text-results">&nbsp</p>
+                <div id="container-header">
+                    <p id="player-score" class="score-buttons">0</p>
+                    <div id="container-title">
+                        <h1>BATO</h1>
+                        <h1>BATO</h1>
+                        <h1>PIK!</h1>
+                    </div>
+                    <p id="computer-score" class="score-buttons">0</p>
                 </div>
-                <img id="computer-image" src="./img/Rocks.png" alt="">
+    
+                <div id="container-hands">
+                    <img id="player-image" src="./img/Rocks.png" alt="">
+                    <div id="container-versus">
+                        <p id="text-round">Round 1</p>
+                        <p id="text-versus">VS</p>
+                        <p id="text-results">&nbsp</p>
+                    </div>
+                    <img id="computer-image" src="./img/Rocks.png" alt="">
+                </div>
+    
+                <div id="container-footer">
+                    <div id="buttons-hide-container" class="">
+                        <div id="container-buttons">
+                            <button data-key="Rocks" id="button-rocks" class="button-choices">Bato</button>
+                            <button data-key="Papers" id="button-papers" class="button-choices">Papel</button>
+                            <button data-key ="Scissors" id="button-scissors" class="button-choices">Gunting</button>
+                        </div>
+                    </div>
+                    <div id="win-hide-container" class="hide">
+                        <div id="container-win">
+                            <p id="text-end-result">YOU WIN! :)</p>
+                            <button class="button-play-again">Play again?</button>
+                        </div>
+                    </div>
+                    <div id="lose-hide-container" class="hide">
+                        <div id="container-lose">
+                            <p id="text-end-result">YOU LOSE! :/</p>
+                            <button class="button-play-again">Play again?</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-            <div id="container-footer">
-                <div id="buttons-hide-container" class="">
-                    <div id="container-buttons">
-                        <button data-key="Rocks" id="button-rocks" class="button-choices">Bato</button>
-                        <button data-key="Papers" id="button-papers" class="button-choices">Papel</button>
-                        <button data-key ="Scissors" id="button-scissors" class="button-choices">Gunting</button>
-                    </div>
-                </div>
-                <div id="win-hide-container" class="hide">
-                    <div id="container-win">
-                        <p id="text-end-result">YOU WIN! :)</p>
-                        <button class="button-play-again">Play again?</button>
-                    </div>
-                </div>
-                <div id="lose-hide-container" class="hide">
-                    <div id="container-lose">
-                        <p id="text-end-result">YOU LOSE! :/</p>
-                        <button class="button-play-again">Play again?</button>
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div class="container-git">
+            <a href="https://rjqocampo.github.io/rock-paper-scissors/" target="_blank">
+                <img src="img/git1.png" alt="Github icon. Silhouette of github's mascot.">
+                <p>By Rod John Ocampo</p>
+            </a>
         </div>
     </body>
 </html>
