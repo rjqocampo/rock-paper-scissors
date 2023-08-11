@@ -16,7 +16,6 @@ Link to live project: https://rjqocampo.github.io/rock-paper-scissors/ :point_le
   * Git for version control
   * Figma for mockup
   * Chrome DevTools for debugging
-  * Google Fonts for web fonts
   * Visual Studio Code for IDE
 
 ### Motivation
@@ -37,7 +36,7 @@ To practice and solidify my Javascript and CSS fundamentals
 # Getting Started
 You can start the project in two ways:
 
-**Visit the live website: [Bato, Bato, Pik](https://rjqocampo.github.io/rock-paper-scissors/)**
+**Visit the live website: https://rjqocampo.github.io/rock-paper-scissors/**
   
 _or_
 
@@ -89,7 +88,9 @@ If you have any questions, feel free to contact me.
 
 # Acknowledgement
 
-Thank you to [PNGEgg](www.pngegg.com) for the images
+Thank you to [Google Fonts](https://fonts.google.com/) for the web fonts
+
+Thank you to [PNGEgg](https://www.pngegg.com/) for the images
 
 # Contacts
 
