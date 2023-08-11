@@ -17,14 +17,19 @@ To practice and solidify my Javascript and CSS fundamentals
 
 # Getting Started
 You can start the project in two ways:
-* Visit the live website: [Bato, Bato, Pik](https://rjqocampo.github.io/rock-paper-scissors/)
+
+**Visit the live website: [Bato, Bato, Pik](https://rjqocampo.github.io/rock-paper-scissors/)**
   
-	_**OR**_
+_or_
 
-1. Clone the repository
-   Open your terminal and clone the repository
-   
-   ```git clone git@github.com:rjqocampo/rock-paper-scissors.git```
+**Clone the repository**
 
-> [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
+  1. Navigate to the directory where you want to clone the repository
+  2. Clone the repository using Git. Open your terminal and enter the following:
+
+      ```git clone git@github.com:rjqocampo/rock-paper-scissors.git```
+      > [!NOTE]  
+      > The method above is cloning using an SSH key. If you do not have an SSH key, there are other methods to clone a repository. [Click here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) to read more.
+
+  3. Open the directory where you cloned the repository
+  4. Select the _**`index.html`**_ file and open in your preferred web browser
