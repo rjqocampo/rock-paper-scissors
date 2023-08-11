@@ -23,9 +23,9 @@ Link to live project: https://rjqocampo.github.io/rock-paper-scissors/ :point_le
 To practice and solidify my Javascript and CSS fundamentals
 
 ### My Learnings
-* Importance of functions and event listeners
+* Importance of functions, event listeners and DOM manipulation
 * The value of chrome dev tools to inspect layout
-* Fonts vary from OS to OS. Encountered a layout bug that was present on Windows, but not on Xubuntu, where I built it. The line height of the web font was significally larger on Windows, distorting the whole layout.  
+* How fonts vary from OS to OS. Encountered a layout bug that was present on Windows, but not on Xubuntu, where I built it. The line height of the web font was significally larger on Windows, distorting the whole layout.  
 
 ### Known Issues
 * Delay on initial load of images
