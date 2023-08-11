@@ -87,6 +87,10 @@ Thank you for your contributions and I appreciate all interests in making this p
 
 If you have any questions, feel free to contact me.
 
+# Acknowledgement
+
+Thank you to [PNGEgg](www.pngegg.com) for the images
+
 # Contacts
 
 Email: rjqocampo@gmail.com
