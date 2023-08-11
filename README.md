@@ -51,6 +51,25 @@ _or_
   3. Open the directory where you cloned the repository
   4. Select the _**`index.html`**_ file and open in your preferred web browser
 
+# Usage
+### Rules
+
+The rules of the Rock, Paper, Scissors game are the same as always. The only difference is the words used are in Tagalog, one of the major language used in the Philippines.
+
+* Bato beats Gunting
+* Gunting beats Papel
+* Papel beats Bato
+
+Both the player and the computer select one of the three options, and the winner of the round is determined by the rules above. First to reach 5 wins the game.
+
+### How-to
+
+1. Click on the "Bato", "Papel", or "Gunting" buttons to make your choice.
+
+2. The current score of the game will be displayed on the screen. The round being played and the result of the last round are also shown.
+
+3. The first to score 5 wins the game. You can choose to play again after. 
+
 # Contributions
 
 I owe my learnings to the open source community. It's an amazing place to learn, inspire and create.  So I welcome any contributions from the community that can help enhance this project. If you're interested in contributing, here are a few pointers to get you started:
