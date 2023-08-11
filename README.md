@@ -24,7 +24,7 @@ To practice and solidify my Javascript and CSS fundamentals
 ### My Learnings
 * Importance of functions and event listeners
 * The value of chrome dev tools to inspect layout
-* Web fonts vary from OS to OS. Encountered a layout bug that was present on Windows, but not on Xubuntu, where I built it. 
+* Fonts vary from OS to OS. Encountered a layout bug that was present on Windows, but not on Xubuntu, where I built it. The line height of the web font was significally larger on Windows, distorting the whole layout.  
 
 ### Known Issues
 * Delay on initial load of images
@@ -44,15 +44,17 @@ _or_
   1. Navigate to the directory where you want to clone the repository
   2. Clone the repository using Git. Open your terminal and enter the following:
 
-      ```git clone git@github.com:rjqocampo/rock-paper-scissors.git```
+      ```
+     git clone git@github.com:rjqocampo/rock-paper-scissors.git
+      ```
       > [!NOTE]  
       > The method above is cloning using an SSH key. If you do not have an SSH key, there are other methods to clone a repository. [Click here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) to read more.
 
-  3. Open the directory where you cloned the repository
-  4. Select the _**`index.html`**_ file and open in your preferred web browser
+  4. Open the directory where you cloned the repository
+  5. Select the `index.html` file and open in your preferred web browser
 
 # Usage
-### Rules
+### Game Rules
 
 The rules of the Rock, Paper, Scissors game are the same as always. The only difference is the words used are in Tagalog, one of the major language used in the Philippines.
 
@@ -66,7 +68,7 @@ Both the player and the computer select one of the three options, and the winner
 
 1. Click on the "Bato", "Papel", or "Gunting" buttons to make your choice.
 
-2. The current score of the game will be displayed on the screen. The round being played and the result of the last round are also shown.
+2. The current score of the game will be displayed on the screen. Including the round being played and the result of the last round.
 
 3. The first to score 5 wins the game. You can choose to play again after. 
 
