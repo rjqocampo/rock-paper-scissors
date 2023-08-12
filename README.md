@@ -25,7 +25,7 @@ To practice and solidify my Javascript and CSS fundamentals
 * Value of conditional statements
 * Importance of functions, event listeners and DOM manipulation
 * Value of chrome dev tools to inspect layout
-* How fonts vary from OS to OS. Encountered a layout bug that was present on Windows, but not on Xubuntu, where I built it. The line height of the web font was significally larger on Windows, distorting the whole layout.  
+* How fonts vary from OS to OS. Encountered a layout bug that was present on Windows, but not on Xubuntu, where I built it. The line height of the web font was significantly larger on Windows, distorting the whole layout.  
 
 ### Known Issues
 * Delay on initial load of images
@@ -57,7 +57,7 @@ _or_
 # Usage
 ### Game Rules
 
-The rules of the Rock, Paper, Scissors game are the same as always. The only difference is the words used are in Tagalog, one of the major language used in the Philippines.
+The rules of the Rock, Paper, Scissors game are the same as always. The only difference is the words are in Tagalog, one of the major language used in the Philippines.
 
 * Bato beats Gunting
 * Gunting beats Papel
